@@ -1,8 +1,11 @@
+//const express = require('express');             // include the express module
+//const app = express();                          // create an express app
+
 let allPokemons = [];
 let selected_pokemons = [];
 let selectedTypes = [];
 
-let totalPokemon = 65;
+let totalPokemon = 810;
 const POKEMON_PER_PAGE = 10;
 const maxPageButtons = 5;
 let currentPage = 1;
@@ -194,3 +197,7 @@ const filterPokemon = async(selectedTypes) => {
 }
 
 $(document).ready(setup); 
+
+// app.get('/', (req, res) => {
+//     res.send(pokemon.html);
+// }) 
